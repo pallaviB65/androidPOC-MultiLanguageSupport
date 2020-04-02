@@ -9,7 +9,7 @@ public class SecondActivity extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        Locale.getDefault().getDisplayLanguage();
+        Locale.getDefault().getLanguage();
         setContentView(R.layout.activity_second);
     }
 
