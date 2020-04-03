@@ -35,7 +35,7 @@ public class MainActivity extends Activity {
             public void onClick(View v) {
 
                 Intent myIntent = new Intent(MainActivity.this,SecondActivity.class);
-                //myIntent.putExtra("locale", locale);
+                myIntent.putExtra("localeName", localeName);
                 startActivity(myIntent);
             }
         });
