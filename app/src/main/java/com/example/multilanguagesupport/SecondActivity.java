@@ -11,12 +11,12 @@ public class SecondActivity extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        Intent intent = getIntent();
+       /* Intent intent = getIntent();*/
        /* String locale = intent.getStringExtra("locale");
         Locale.setDefault(locale);*/
-        myLocale = Locale.getDefault().getLanguage();
+        /*myLocale = Locale.getDefault().getLanguage();
         Locale locale = new Locale(myLocale);
-        Locale.setDefault(locale);
+        Locale.setDefault(locale);*/
 
         setContentView(R.layout.activity_second);
     }
