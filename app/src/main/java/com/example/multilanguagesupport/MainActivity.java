@@ -49,7 +49,7 @@ public class MainActivity extends Activity {
             Configuration conf = res.getConfiguration();
             conf.locale = myLocale;
             res.updateConfiguration(conf, dm);
-            Intent refresh = new Intent(this, MainActivity.class);
+            Intent refresh = new Intent(MainActivity.this,SecondActivity.class);
             refresh.putExtra(currentLang, localeName);
             startActivity(refresh);
         } else {
