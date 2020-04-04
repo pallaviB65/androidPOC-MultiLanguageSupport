@@ -49,9 +49,9 @@ public class MainActivity extends Activity {
             Configuration conf = res.getConfiguration();
             conf.locale = myLocale;
             res.updateConfiguration(conf, dm);
-            Intent refresh = new Intent(MainActivity.this,SecondActivity.class);
-            refresh.putExtra(currentLang, localeName);
-            startActivity(refresh);
+            /*Intent refresh = new Intent();
+            refresh.putExtra("localeName", localeName);
+            startActivity(refresh);*/
         } else {
             Toast.makeText(MainActivity.this, "Language already selected!", Toast.LENGTH_SHORT).show();
         }

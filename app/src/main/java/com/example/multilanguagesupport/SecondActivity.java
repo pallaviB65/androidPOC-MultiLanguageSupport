@@ -33,9 +33,9 @@ public class SecondActivity extends Activity {
             Configuration conf = res.getConfiguration();
             conf.locale = myLocale;
             res.updateConfiguration(conf, dm);
-            Intent refresh = new Intent();
+            /*Intent refresh = new Intent();
             refresh.putExtra(currentLang, localeName);
-            startActivity(refresh);
+            startActivity(refresh);*/
         } else {
             Toast.makeText(SecondActivity.this, "Language already selected!", Toast.LENGTH_SHORT).show();
         }
