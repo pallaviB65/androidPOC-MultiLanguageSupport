@@ -55,5 +55,7 @@ public class MainActivity extends Activity {
         } else {
             Toast.makeText(MainActivity.this, "Language already selected!", Toast.LENGTH_SHORT).show();
         }
+
+
     }
 }
