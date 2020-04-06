@@ -19,13 +19,13 @@ public class SecondActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_second);
 
-        Intent intent = getIntent();
-        String localeName = intent.getStringExtra("localeName");
+       /* Intent intent = getIntent();
+        String localeName = intent.getStringExtra("localeName");*/
 
-        setLocale(localeName);
+        //setLocale(localeName);
     }
 
-    public void setLocale(String localeName) {
+   /* public void setLocale(String localeName) {
         if (!localeName.equals(currentLanguage)) {
             myLocale = new Locale(localeName);
             Resources res = getResources();
@@ -33,12 +33,12 @@ public class SecondActivity extends Activity {
             Configuration conf = res.getConfiguration();
             conf.locale = myLocale;
             res.updateConfiguration(conf, dm);
-            /*Intent refresh = new Intent();
+            *//*Intent refresh = new Intent();
             refresh.putExtra(currentLang, localeName);
-            startActivity(refresh);*/
+            startActivity(refresh);*//*
         } else {
             Toast.makeText(SecondActivity.this, "Language already selected!", Toast.LENGTH_SHORT).show();
         }
-    }
+    }*/
 
 }
